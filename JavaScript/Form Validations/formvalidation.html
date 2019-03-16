@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<script>
+		function add()
+		{
+		var a=parseInt(f1.t1.value);
+		var b=parseInt(f1.t2.value);
+		var c=a+b;
+		document.getElementById("demo").innerHTML="Addition of two numbers is:" + c;
+		}
+		function sub()
+		{
+		var a=parseInt(f1.t1.value);
+		var b=parseInt(f1.t2.value);
+		var c=a-b;
+		document.getElementById("demo").innerHTML="Subtraction of two numbers is:" + c;
+		}
+		function mul()
+		{
+		var a=parseInt(f1.t1.value);
+		var b=parseInt(f1.t2.value);
+		var c=a*b;
+		document.getElementById("demo").innerHTML="Multiplication of two numbers is:" + c;
+		}
+		function div()
+		{
+		var a=parseInt(f1.t1.value);
+		var b=parseInt(f1.t2.value);
+		var c=a/b;
+		document.getElementById("demo").innerHTML="Division of two numbers is:" + c;
+		}
+		</script>
+			
+		</head>
+	
+	
+	<body>
+	<h2 align="center"><u>JS Calculator</u></h2>
+	<table align="center">
+	<tr><td>
+	<form name="f1">
+	Enter Number: <input type="text" name="t1" placeholder="Enter Number"></td></tr>
+	<tr><td>Enter Number: <input type="text" name="t2" placeholder="Enter Number"></td></tr>
+	
+	<tr><td colspan="2"><input type="button" value="Add" onclick=add();>
+		<input type="button" value="Subtract" onclick=sub();>
+			<input type="button" value="Multiply" onclick=mul();>
+				<input type="button" value="Divide" onclick=div();>
+		</td></tr>
+	</form>
+	</table>	
+	<div id="demo" >
+	
+	</div>
+		
+	</body>
+	
+	</html>

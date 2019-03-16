@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<script>
+			function sel()
+			{
+			var ch=f1.t1.selectedIndex;
+			if (ch==0)
+			{
+			f1.t2.value=" ";
+			}
+			if (ch==1)
+			{
+			f1.t2.value="12000";
+			}
+			if (ch==2)
+			{
+			f1.t2.value="10000";
+			}
+			}
+			function con(i)
+			{
+			if(i==1)
+			{
+			f1.t3.value="100";
+			}
+			if(i==2)
+			{
+			f1.t3.value="200";
+			}
+			if(i==3)
+			{
+			f1.t3.value="300";
+			}
+			if(i==4)
+			{
+			f1.t3.value="400";
+			}
+			}
+			
+			function cal(){
+			
+			var total = parseInt(f1.t2.value);
+			var concession = parseInt(f1.t3.value);
+			var Paid = parseInt(f1.t4.value);
+			var due = total - (Paid + concession );
+			
+			if(due >= 0)
+			{
+			f1.t5.value= due;
+			}
+			else
+			{
+			alert("Inavlid amount");
+			}
+			}
+			
+		</script>
+		</head>
+	
+	
+	<body>
+	<h2 align="center"><u>Student Registration</u></h2>
+	<table align="center" >
+	<tr>
+	<td>
+	<form name="f1">
+	Course:</td>
+	<td><select name="t1" onchange=sel();>
+		<option>--Select--</option>
+		<option>Java</option>
+		<option>C++</option>
+		</select>
+	</td></tr>
+	<tr><td>Total Fee:</td><td><input type="text" name="t2" placeholder="Enter Fee"></td></tr>
+	<tr><td>Caste:</td><td><input type="radio" name="c1" onclick=con(1);>OC 
+							<input type="radio" name="c1" onclick=con(2);>BC 
+							<input type="radio" name="c1" onclick=con(3);>SC 
+							<input type="radio" name="c1" onclick=con(4);>ST</td></tr>
+	<tr><td>Concession Fee:</td><td><input type="text" name="t3" placeholder="Enter Fee"></td></tr>
+	<tr><td>Paid Fee:</td><td><input type="text" name="t4" placeholder="Enter Fee"></td></tr>
+	<tr><td>Due Fee:</td><td><input type="text" name="t5" placeholder="Enter Fee"></td></tr>
+	<tr><td></td><td><input type="button" value="Calculate" onclick=cal();></td></tr>
+	</form>
+	</table>	
+	
+		
+	</body>
+	
+	</html>

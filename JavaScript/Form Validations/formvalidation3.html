@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<script>
+		
+		function check()
+		{
+		
+		var a = f1.uName.value;
+		var b = f1.pwd.value;
+		var c = f1.confirmPwd.value;
+		if(a == null || a == "")
+		{
+		alert("Please enter Username");
+		}
+		else if(b == null || b == "")
+		{
+		alert("Please enter Password");
+		}
+		else if(c == null || c == "")
+		{
+		alert("Please reeneter password");
+		}
+		
+		}
+		
+		function chkPwd()
+		{
+		
+		var b = f1.pwd.value;
+		var c = f1.confirmPwd.value;
+		
+		if( b !== c)
+		{
+		alert("Password not matched");
+		}
+		else
+		{
+		
+		}
+		
+		}
+		
+			
+		</script>
+		</head>
+	
+	
+	<body>
+	<h2 align="center"><u>JS Validation</u></h2>
+	<table align="center" >
+	<tr>
+	<td>
+	<form name="f1">
+	<tr><td>User Name:</td><td><input type="text" name="uName" placeholder="Enter name"></td></tr>
+	<tr><td>Password :</td><td><input type="password" name="pwd" placeholder="Enter Password"></td></tr>
+	<tr><td>Confirm Password:</td><td><input type="password" name="confirmPwd" placeholder="Reenter Password" onchange=chkPwd();></td></tr>
+	<tr><td>Address:</td><td> <textarea name="address" placeholder="Address"></textarea> </td></tr>
+	<tr><td>Mobile :</td><td><input type="text" name="MobileNum" placeholder="Enter number"></td></tr>
+	<tr><td>City:</td>
+	<td><select name="city" 
+		<option>--Select--</option>
+		<option>Bng</option>
+		<option>Hyd</option>
+		</select>
+	</td></tr>
+	<tr> 
+	<td> 
+	<input type="button" value="Submit" onclick=check();> 
+	</td>
+	</tr>
+	</form>
+	</table>	
+	
+		
+	</body>
+	
+	</html>
