@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script>
+	
+	function myfunction()
+	{
+	
+	lname=document.forms[0].lname.value;
+	alert("Hello"+ lname + "You will be redirected to www.w3Schools.com");
+	
+	}
+	</script>
+		
+	</head>
+<body>
+	
+	<p id="demo1">This is ONSUBMIT event</p>
+	<form onsubmit="myfunction()" action="https://www.w3Schools.com">
+	Enter your name: <input type="text" id="fname">
+	Enter your lname: <input type="text" id="lname">
+	<input type="submit">
+	</form>
+	<p id="demo"></p>
+
+</body>
+</html>

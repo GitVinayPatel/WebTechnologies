@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script>
+	
+	function myfunction(){
+	var txt;
+	var r= confirm("Do you want to delete?");
+	if (r==true)
+	{
+	txt="You clicked on ok";
+	}
+	else
+	{
+	txt="you clicked on cancel"
+	}
+	document.getElementById("demo").innerHTML= txt;
+	}
+	
+	</script>
+		
+	</head>
+<body>
+	
+	<button onclick="myfunction()">Delete</button>
+	<p id="demo">  </p>
+	<p>Delete confirm popup</p>
+</body>
+</html>
