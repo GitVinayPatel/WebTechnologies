@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Functions</title>
+</head>
+<script>
+
+var Name = prompt("Enter student name"); 
+var sub1 = parseInt(prompt("Enter Maths marks"));
+var sub2 = parseInt(prompt("Enter Science marks"));
+var sub3 = parseInt(prompt("Enter Social marks"));
+var total= sub1+sub2+sub3;
+var average = total/3;
+
+document.write("Total Marks is : " + total);
+
+if(sub1<35 || sub2<35 || sub3<35 ){
+document.write("Sorry to inform you are Failed");
+}
+else
+{
+document.write("Average is : "+ average);
+}
+
+if(average>85)
+{
+document.write("Grage is A ");
+}
+else if (average>60)
+{
+document.write("Grage is : B ");
+}
+else if (average<50)
+{
+document.write("Grage is : C ");
+}
+
+</script>
+<body>
+
+
+
+</body>
+</html>
