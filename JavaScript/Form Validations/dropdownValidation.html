@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script>
+function validate(){
+	
+	var choice = document.myform.city.value;
+	
+	if(choice==""){
+	alert("please select city");
+	return false;
+	}
+	else
+	{
+	alert("validate sucess");
+	return true;
+	}
+}
+
+</script>
+
+
+<body>
+<form name="myform" action="dropdwon1.php" onsubmit="return validate()">
+Select City : <select name="city">
+<option name="" value="">--select--</option>
+<option id="bng" value="bng">Bng</option>
+<option id="Hyd" value="Hyd">Hyd</option>
+<option id="Mysore" value="Mysore">Mysore</option>
+</select>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<script>
+function validate(){
+	
+	var valid=false;
+	
+	if(document.getElementById('js').checked){
+	 valid = true;
+	}
+	else if(document.getElementById('Ajs').checked){
+	 valid = true;
+	}
+	else if(document.getElementById('Njs').checked){
+	 valid = true;
+	}
+	
+	if(valid)
+	{
+	alert("validation sucessfull");
+	return true;
+	}
+	else{
+	alert("Please select Course");
+	return false;
+	}
+	
+}
+
+
+</script>
+
+
+<body>
+<form name="myform" action="chkbox1.php" onsubmit="return validate()">
+Select Course : <input type="checkbox" id="js">Js
+<input type="checkbox" id="Ajs">AJs
+<input type="checkbox" id="Njs">NJs
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
