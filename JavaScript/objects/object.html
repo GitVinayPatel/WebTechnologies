@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Object Assignment</title>
+	<script>
+	
+	function product(id,name,descrption,price){
+	
+	this.id=id;
+	this.name=name;
+	this.descrption=descrption;
+	this.price=price;
+	this.displayProductDetails=displayProductDetails;
+	this.calculateDiscount=calculateDiscount;
+	
+	}
+	
+	function displayProductDetails()
+	{
+	
+	document.write("Id is :" + product.id + "<br>");
+	document.write("name is :" + product.name + "<br>" );
+	document.write("Description is :" + product.descrption + "<br>");
+	document.write("Price is :" + product.price +  "<br>");
+	
+	}
+	
+	
+	function calculateDiscount(percentage)
+	
+	{
+	
+	var afterDiscount = this.price - ((percentage/100)* (this.price))
+	document.write("discount price is " + afterDiscount);
+	}
+	
+	var product= new product(123,"DD","Test",100);
+	product.displayProductDetails();
+	product.calculateDiscount(10);
+	
+	
+	</script>
+</head>
+<body>
+
+
+
+
+</body>
+
+</html>
