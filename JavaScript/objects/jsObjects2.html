@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>objects f/n constructor</title>
+</head>
+<script>
+
+function car(car_model,car_type,car_price)
+{
+	this.car_model=car_model;
+	this.car_type = car_type;
+	this.car_price=car_price;
+	this.new_price = function(new_price) //adding Method to a Constructor
+	{
+	this.car_price=new_price;
+	}
+}
+var c1= new car("BMW","SUV","20000");
+var c2= new car("Tata","hatchback","30000");
+document.write("Car1 price is " + c1.car_price );
+c2.new_price(50000);
+document.write("Car2 new_price is " + c2.car_price );
+
+
+
+
+
+</script>
+<body>
+
+
+
+</body>
+</html>
